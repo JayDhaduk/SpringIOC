@@ -7,4 +7,7 @@
  	<bean class="com.springIOC.Airtel" id="airtel"> </bean> 
  	
  	<bean class="com.springIOC.Vodafone" id="vodafone"> </bean> 
+ 	
+ 	<bean class="com.springIOC.Three" id="three"> </bean> 
+ 	
  </beans>

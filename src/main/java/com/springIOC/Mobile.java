@@ -26,10 +26,13 @@ public class Mobile {
 		
 		//Error Sol::https://stackoverflow.com/questions/12893760/spring-cannot-find-bean-xml-configuration-file-when-it-does-exist
 		ApplicationContext  context = new ClassPathXmlApplicationContext("file:src/main/java/com/springIOC/beans.xml");
-		Vodafone vodafone = context.getBean("vodafone", Vodafone.class);
 		
-		vodafone.calling();
-		vodafone.internet();
+//		Vodafone vodafone = context.getBean("vodafone", Vodafone.class);
+//		vodafone.calling();
+//		vodafone.internet();
+		
+		Three three = context.getBean("three",Three.class);
+		three.calling(); three.internet();
 		
 	}
 }
